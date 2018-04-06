@@ -23,3 +23,10 @@ Unfortunately for Hamilton, the grass that he had been chewing on was pesticide-
 
 The sheep baa-d in good humor at his plight.
 
+
+
+
+At the sight of poor hamilton's convulsing the sheep immediately began laughing. They had a deep distrust of all cats, and were happy that the feline was in pain!
+
+"Hurrah" shouted Timmy, the leader of the sheep. "Down with cats!" responded the flock in unison
+
