@@ -4,7 +4,19 @@ After every few sentences, push your changes to the remote repository and resolv
 
 YOUR STORY HERE
 '''
-It was a dark, chilly spring afternoon. The sun sank beneath the dark clouds sitting about the stormy Charles. 
-The winds howled...
 
-Liam was suprised. He wasn't sure if he was doing the whole 'pushing' and 'pulling' correctly.
+There once was a cat named Hamilton who lived with a family of sheep.
+No one really remembers how Hamilton came to live with the sheep.
+One day the sheep woke up to meowing and saw a cat on the edge of the field.
+"Greetings!" said the cat.
+"I am Hamilton."
+The sheep were quite content with having another addition to the group.
+
+The sheep introduced Hamilton to its flock. The sheep said, "Meet my flock!"
+"Hello, flock" said Hamilton.
+
+The sheep and Hamilton spent that day mostly sleeping, drinking water from the pond, and singing songs.
+Although it was a lazy day, Hamilton felt pretty hungry.
+He noticed some of the sheep were chewing on the grass, so he knelt down and took a big bite.
+
+Unfortunately for Hamilton, the grass that he had been chewing on was pesticide-ridden. He immediately began convulsing.
