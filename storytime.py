@@ -13,3 +13,7 @@ The sheep were quite content with having another addition to the group.
 
 The sheep introduced Hamilton to its flock. The sheep said, "Meet my flock!"
 "Hello, flock" said Hamilton.
+
+The sheep and Hamilton spent that day mostly sleeping, drinking water from the pond, and singing songs.
+Although it was a lazy day, Hamilton felt pretty hungry.
+He noticed some of the sheep were chewing on the grass, so he knelt down and took a big bite.
