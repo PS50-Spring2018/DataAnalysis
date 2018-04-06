@@ -19,4 +19,6 @@ Although it was a lazy day, Hamilton felt pretty hungry.
 He noticed some of the sheep were chewing on the grass, so he knelt down and took a big bite.
 Hamilton was not accustomed to eating grass.
 The sheep baa-d in good humor at his plight.
-
+Hamilton spat out the grass, chuckled, walked over to the pond, and jumped in.
+Hamilton, with a huge paw swipe, skewered a fish out of the water.
+He lept out of the water, fish in hand, and happily munched away.
