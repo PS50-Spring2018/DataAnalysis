@@ -10,3 +10,6 @@ One day the sheep woke up to meowing and saw a cat on the edge of the field.
 "Greetings!" said the cat.
 "I am Hamilton."
 The sheep were quite content with having another addition to the group.
+
+The sheep introduced Hamilton to its flock. The sheep said, "Meet my flock!"
+"Hello, flock" said Hamilton.
