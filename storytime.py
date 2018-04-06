@@ -30,3 +30,6 @@ At the sight of poor hamilton's convulsing the sheep immediately began laughing.
 
 "Hurrah" shouted Timmy, the leader of the sheep. "Down with cats!" responded the flock in unison
 
+Hamilton spat out the grass, chuckled, walked over to the pond, and jumped in.
+Hamilton, with a huge paw swipe, skewered a fish out of the water.
+He lept out of the water, fish in hand, and happily munched away.
