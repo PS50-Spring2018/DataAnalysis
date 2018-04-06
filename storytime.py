@@ -20,3 +20,6 @@ Although it was a lazy day, Hamilton felt pretty hungry.
 He noticed some of the sheep were chewing on the grass, so he knelt down and took a big bite.
 
 Unfortunately for Hamilton, the grass that he had been chewing on was pesticide-ridden. He immediately began convulsing.
+
+The sheep baa-d in good humor at his plight.
+
