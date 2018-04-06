@@ -33,3 +33,5 @@ At the sight of poor hamilton's convulsing the sheep immediately began laughing.
 Hamilton spat out the grass, chuckled, walked over to the pond, and jumped in.
 Hamilton, with a huge paw swipe, skewered a fish out of the water.
 He lept out of the water, fish in hand, and happily munched away.
+
+But alas, out of the water followed a hungry snapping turtle. He had once tasted a cat, and had become forever addited by its sweet, succulent taste.
