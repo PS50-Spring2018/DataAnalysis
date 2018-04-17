@@ -7,14 +7,18 @@ x = [1,2,4]
 y = [2,5,6]
 x2 = [0.1,0.24,0.53]
 ourim = img.imread('Cat03.jpg')
+secim = img.imread('colorwheel.jpg')
 gs =grd.GridSpec(2,3)
 ax1 = plt.subplot2grid((2,3),(0,0))
 ax2 = plt.subplot2grid((2,3),(0,1))
 ax3 = plt.subplot2grid((2,3),(0,2))
-ax4 = plt.subplot2grid((2,3),(1,0), colspan=3)
+ax4 = plt.subplot2grid((2,3),(1,0), colspan=2)
+ax5 = plt.subplot2grid((2,3),(1,2))
 ax1.errorbar(x,y,color='r',yerr=x2)
 ax4.errorbar(x2,x,yerr=y)
 ax2.imshow(ourim)
+ax5.imshow(secim)
+
 ax2.xaxis.set_visible(False)
 ax2.yaxis.set_visible(False)
 for t in range(1,100):
