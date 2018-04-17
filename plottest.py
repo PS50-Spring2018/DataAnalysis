@@ -3,6 +3,7 @@ from matplotlib import image as img
 from matplotlib import gridspec as grd
 import seaborn as sns
 import numpy as np
+
 x = [1,2,4]
 y = [2,5,6]
 x2 = [0.1,0.24,0.53]
@@ -28,3 +29,4 @@ for t in range(1,100):
 	plt.pause(0.1)
 
 plt.show()
+
