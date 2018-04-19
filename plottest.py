@@ -25,7 +25,6 @@ for theta in thetas: #nested for loop
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='polar')
 c = ax.scatter(t, r, c=c, alpha=1.0) #has to take RGB values
-plt.axis('off')
 
 # trying to plot example colors onto colorwheel now; hasn't worked so far
 # rgb_test = np.array([255,0,0],[0,128,0],[0,0,255]) #red, green, and blue
@@ -52,10 +51,10 @@ ax5 = plt.subplot2grid((2,3),(1,2), projection = 'polar')
 ax1.errorbar(x,y,color='r',yerr=x2)
 ax4.errorbar(x2,x,yerr=y)
 ax2.imshow(ourim)
-ax5.scatter(s, r, c=c, alpha=1.0)
+ax5.scatter(t, r, c=c, alpha=1.0)
 ax2.xaxis.set_visible(False)
 ax2.yaxis.set_visible(False)
-for s in range(1,100):
+for t in range(1,100):
 	x = np.random.rand(3)
 	ax3.clear()
 	ax3.plot(y,x)
