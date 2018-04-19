@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 import colorsys as cs
 
-N = 1000
+N = 200
 radii = np.linspace(0,1,N)
 thetas = np.linspace(0,2*np.pi,N)
 t = [] #list of thetas
@@ -20,16 +20,14 @@ for theta in thetas: #nested for loop
 		c.append(cs.hsv_to_rgb(theta/(2*np.pi),radius,1)) #normalize all theta
 		# 1 at the end corresponds to brightness
 
-<<<<<<< HEAD
 # fig = plt.figure()
 # ax = fig.add_subplot(111, projection='polar')
 # c = ax.scatter(t, r, c=c, alpha=1.0) #has to take RGB values
 # plt.axis('off')
-=======
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='polar')
-c = ax.scatter(t, r, c=c, alpha=1.0) #has to take RGB values
->>>>>>> d1517309544c2a3a90c686cb34835a1b318668f4
+
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='polar')
+# c = ax.scatter(t, r, c=c, alpha=1.0) #has to take RGB values
 
 # trying to plot example colors onto colorwheel now; hasn't worked so far
 # rgb_test = np.array([255,0,0],[0,128,0],[0,0,255]) #red, green, and blue
@@ -55,7 +53,6 @@ ax1.errorbar(x,y,color='r',yerr=x2)
 ax4.errorbar(x2,x,yerr=y)
 ax2.imshow(ourim)
 ax5.scatter(t, r, c=c, alpha=1.0)
-<<<<<<< HEAD
 ax5.xaxis.set_visible(False)
 ax5.yaxis.set_visible(False)
 ax2.xaxis.set_visible(False)
@@ -65,15 +62,6 @@ ax2.yaxis.set_visible(False)
 # 	ax3.clear()
 # 	ax3.plot(y,x)
 # 	plt.pause(0.1)
-=======
-ax2.xaxis.set_visible(False)
-ax2.yaxis.set_visible(False)
-for t in range(1,100):
-	x = np.random.rand(3)
-	ax3.clear()
-	ax3.plot(y,x)
-	plt.pause(0.1)
->>>>>>> d1517309544c2a3a90c686cb34835a1b318668f4
 
 plt.show()
 
