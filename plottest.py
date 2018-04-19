@@ -7,7 +7,7 @@ import colorsys as cs
 
 
 
-N = 1000
+N = 100
 radii = np.linspace(0,1,N)
 thetas = np.linspace(0,2*np.pi,N)
 t = [] #list of thetas
@@ -54,7 +54,7 @@ ax2.imshow(ourim)
 ax5.scatter(t, r, c=c, alpha=1.0)
 ax2.xaxis.set_visible(False)
 ax2.yaxis.set_visible(False)
-for t in range(1,100):
+for s in range(1,100):
 	x = np.random.rand(3)
 	ax3.clear()
 	ax3.plot(y,x)
