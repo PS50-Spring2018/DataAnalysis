@@ -121,6 +121,37 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 		print('**',c_squares[i-1])
 
 	plt.tight_layout()
-	#plt.show()
+	plt.show()
 	# change to plt.pause(0.05)
-	plt.pause(0.05)
+	#plt.pause(5.)
+
+def DashUpdate(mean_RGB, var_RGB, image_array): 
+# inputs:
+# mean_RGB is an N by 3 dimensional numpy array containing all
+# r, g, and b values to date
+# example = 
+#each input is a numpy array, mean RGB and var RGB should each contain 3 numbers; image_array is a np array that needs to be converted into an image
+	meanR.append(mean_RGB[0])
+	meanG.append(mean_RGB[1])
+	meanB.append(mean_RGB[2])
+	varR.append(var_RGB[0])
+	varG.append(var_RGB[1])
+	varB.append(var_RGB[2])
+
+
+	
+
+
+
+if __name__=='__main__':
+
+	from webcamtest import snap
+
+	image_array = snap()
+
+	mean_RGB = np.array([[1,2,3],[3,5,150],[8,6,250],[250,6,6],[0,128,0]])
+	var_RGB = 0.1*mean_RGB
+
+	dashboard(mean_RGB,var_RGB,image_array)
+
+

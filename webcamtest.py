@@ -49,6 +49,8 @@ def snap(n=0):
 
 if __name__=='__main__':
 
+	pass
+
 	# #Uncomment to stream webcam video
 	#stream()
 
