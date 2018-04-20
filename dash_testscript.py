@@ -8,14 +8,28 @@ import cv2
 
 def dashboard(mean_RGB, var_RGB, image_array, N =100):
 
-	# initialize lists of all-time relevant RGB values
-	meanR = []
-	meanG = []
-	meanB = []
-	varR = []
-	varG = []
-	varB = []
-
+	if len(mean_RGB)>1:
+		pred_RGB = []
+		for i in range(0,len(mean_RGB)):
+			if (mean_RGB[i][0]-mean_RGB[i-1][0])+mean_RGB[i][0] < 0:
+				j = 0
+			elif (mean_RGB[i][0]-mean_RGB[i-1][0])+mean_RGB[i][0] > 255:
+				j = 255
+			else:
+				j = (mean_RGB[i][0]-mean_RGB[i-1][0])+mean_RGB[i][0]
+			if (mean_RGB[i][1]-mean_RGB[i-1][1])+mean_RGB[i][1] < 0:
+				k = 0
+			elif (mean_RGB[i][1]-mean_RGB[i-1][1])+mean_RGB[i][1] > 255:
+				j = 255
+			else:
+				k = (mean_RGB[i][1]-mean_RGB[i-1][1])+mean_RGB[i][1]
+			if (mean_RGB[i][2]-mean_RGB[i-1][2])+mean_RGB[i][2] < 0:
+				l = 0
+			elif (mean_RGB[i][2]-mean_RGB[i-1][2])+mean_RGB[i][2] > 255:
+				j = 255
+			else:
+				l = (mean_RGB[i][2]-mean_RGB[i-1][2])+mean_RGB[i][2]
+			pred_RGB.append([j,k,l])
 
 	# the following section plots the colorwheel
 	radii = np.linspace(0,1,N)
@@ -86,8 +100,10 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 
 	#plotting rbg data
 	line_colors = ['r','g','b']
+	print(pred_RGB)
 	for i, c in enumerate(line_colors):
 		lines.errorbar(range(len(mean_RGB)),mean_RGB[:,i],yerr=var_RGB[:,i],color=c)
+		lines.plot(range(1,len(pred_RGB)+1),pred_RGB[:,i],'*',color=c)
 
 	# display latest image
 	beaker.imshow(image_array, interpolation='nearest')
@@ -117,13 +133,14 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 
 	#squares.scatter(x_squares, y_squares, c=c_squares, alpha=1.0, marker = 's',s=5000/len(mean_RGB)) #has to take RGB values
 	for i in range(1,len(mean_RGB)+1):
-		squares.plot([i-1+0.49,i-0.49], [0,0], '-', linewidth=100, c=c_squares[i-1])
+		squares.plot([i-1+0.49,i-0.49], [0,0], '-', linewidth=60, c=c_squares[i-1])
+		squares.plot([i-1+0.49,i-0.49], [1,1], '-', linewidth=60, c=c_squares[len(mean_RGB+1)-i])
 		print('**',c_squares[i-1])
 
 	plt.tight_layout()
 	plt.show()
 	# change to plt.pause(0.05)
-	#plt.pause(5.)
+	#plt.pause(10)
 
 def DashUpdate(mean_RGB, var_RGB, image_array): 
 # inputs:

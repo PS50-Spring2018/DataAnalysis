@@ -121,6 +121,6 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 		print('**',c_squares[i-1])
 
 	plt.tight_layout()
-	#plt.show()
+	plt.show()
 	# change to plt.pause(0.05)
-	plt.pause(0.05)
+	plt.pause(5)
