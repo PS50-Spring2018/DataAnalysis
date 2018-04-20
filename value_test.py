@@ -24,15 +24,15 @@ c = ax.scatter(x, y, c=color, alpha=1.0) #has to take RGB values
 plt.axis('off')
 
 # trying to plot example colors onto colorwheel now; hasn't worked so far
-rgb_test = np.array([[173,216,230],[0,0,255],[0,0,139]]) #light blue, blue, and dark blue
-x_points = []
-y_points = 0.5*np.ones(3)
-for color in rgb_test:
-	r, g, b = color[0], color[1], color[2]
-	hsv = cs.rgb_to_hsv(r,g,b)
-	x_points.append(hsv[2]/255)
+# rgb_test = np.array([[173,216,230],[0,0,255],[0,0,139]]) #light blue, blue, and dark blue
+# x_points = []
+# y_points = 0.5*np.ones(3)
+# for color in rgb_test:
+# 	r, g, b = color[0], color[1], color[2]
+# 	hsv = cs.rgb_to_hsv(r,g,b)
+# 	x_points.append(hsv[2]/255)
 
-d = ax.plot(x_points,y_points, 'yo-')
+# d = ax.plot(x_points,y_points, 'yo-')
 
 
 plt.show()
