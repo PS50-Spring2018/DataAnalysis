@@ -115,13 +115,14 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 	v_val = []
 	y_val = np.linspace(0,1,len(mean_RGB))
 
-	# for each RGB triplet, convert to hsv (scaled 0-1), rescale theta to 0-2pi, then append to relevant lists
+	# for each RGB triplet, rescale to 0-1 (for the cs.rgb_to_hsv function), convert to hsv (scaled 0-1), rescale theta to 0-2pi,
+	# then append to relevant lists
 	for color in mean_RGB:
-		r, g, b = color[0], color[1], color[2]
-		hsv = cs.rgb_to_hsv(r,g,b) # shouldn't this be cs.rgb_to_hsv(r/255, g/255, b/255)? or do we receive mean rgb values scaled 0-1?
+		r, g, b = color[0]/255, color[1]/255, color[2]/255
+		hsv = cs.rgb_to_hsv(r,g,b)
 		t_val.append(hsv[0]*2*np.pi)
 		r_val.append(hsv[1])
-		v_val.append(hsv[2]/255) # why are we dividing by 255 here? isn't hsv already scaled to 0-1?
+		v_val.append(hsv[2]) 
 
 	# plots course through color and intensity spaces
 	colorwheel.plot(t_val,r_val, 'k-')
@@ -132,7 +133,7 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 	# sets up lists to show history of average colors in the next section
 	x_squares = range(len(mean_RGB))
 	y_squares = np.zeros(len(x_squares))
-	c_squares = mean_RGB/255 # should we be dividing by 255 here?
+	c_squares = mean_RGB/255
 
 	# divides a plot into horizontal segments according to the number of past mean colors to display
 	for i in range(1,len(mean_RGB)+1):
