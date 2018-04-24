@@ -61,6 +61,8 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 			color.append(cs.hsv_to_rgb(0, 0, 1-x_val)) # x_val subtracted from 1 in order to make the plot light to dark as opposed to 
 			# dark to light (which is just convention for v values in hsv)
 
+	# Turn interactive plotting on
+	plt.ion()
 	# plt.close is necessary because this function will be called for each new image
 	plt.close('all')
 	# sets up grid
@@ -124,8 +126,8 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 	# plots course through color and intensity spaces
 	colorwheel.plot(t_val,r_val, 'k-')
 	colorwheel.plot(t_val[-1],r_val[-1], 'ko') # adds last point as a circle to show where the course ends
-	colorbar.plot(1-np.array(h_val),y_val,'y-')
-	colorbar.plot(1-h_val[-1],y_val[-1],'yo') # adds last point as a circle to show where the course ends
+	colorbar.plot(1-np.array(v_val),y_val,'y-')
+	colorbar.plot(1-v_val[-1],y_val[-1],'yo') # adds last point as a circle to show where the course ends
 
 	# sets up lists to show history of average colors in the next section
 	x_squares = range(len(mean_RGB))
