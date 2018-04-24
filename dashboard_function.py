@@ -96,7 +96,7 @@ def dashboard(mean_RGB, var_RGB, image_array, N =100):
 	lines.set_xlabel('Iterations', fontsize = 8)
 	
 	squares.axis('off')
-	squares.set_title('Average Beaker Colors and Future Predictions',fontsize = 8)
+	squares.set_title('Mean Color in the Beaker over Time',fontsize = 8)
 
 	# the above sections specify the "default" appearance of the dashboard
 	# the following sections add experiment-specific information to the dashboard 
